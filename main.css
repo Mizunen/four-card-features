@@ -29,21 +29,24 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: hsl(234, 12%, 34%);
+    color:hsl(229, 6%, 66%);
 }
 
 .header{
     margin-bottom: 3.5rem;
-    font-weight: 200;    
+      
 
 }
 
 .header__title{
     font-size: 1.5rem;
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;  
 }
 
 .header__description{
     text-align: center;
+    color: hsl(229, 6%, 66%);
 }
 
 .bold{
@@ -85,10 +88,6 @@ main{
     position: absolute;
     bottom: 0.5rem;
     right:-0.5rem;
-}
-
-.card__description{
-    font-weight: 200;
 }
 
 footer{
@@ -159,5 +158,4 @@ footer{
     .card__description{
         font-size: 1.15rem;
     }
-
 }
