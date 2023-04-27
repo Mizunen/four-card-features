@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: hsl(0, 0%, 98%);
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(234, 12%, 34%);
+}
+
+.header{
+    margin-bottom: 3.5rem;
+    font-weight: 200;    
+
+}
+
+.header__title{
+    font-size: 1.5rem;
+}
+
+.header__description{
+    text-align: center;
+}
+
+.bold{
+    font-weight: 600;
+    color: black;
+}
+
+.card{
+    height: 15rem;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1.75rem;
+    box-shadow: 0 0.5rem 1.5rem -0.5rem hsl(234, 12%, 34%);
+}
+
+.card p{
+    margin-left: 1rem;
+}
+
+.supervisor{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.team-builder{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.karma{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card__icon{
+    position: absolute;
+    bottom: 0.5rem;
+    right:-0.5rem;
+}
+
+.card__description{
+    font-weight: 200;
+}
+
+footer{
+    height: 5vh;
+}
+
+@media screen and (min-width: 1440px) {
+    main{
+        justify-content: flex-start;
+        align-items: flex-start;
+        min-height: 95vh;
+    }
+    .container{
+        justify-content: flex-end;
+        width: 100%;
+        
+    }
+
+    .header{
+        width: 40rem;
+        margin-top: 5rem;
+        margin-bottom: 14rem;
+    }
+
+    .header__title{
+        font-size: 3rem;
+    }
+
+    .header__description{
+        font-size: 1.25rem;
+    }
+
+    .card-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card{
+        width: 25rem;
+        height: 17rem;
+    }
+
+    .supervisor{
+        margin-right: 2rem;
+    }
+
+    .team-builder{
+        position: relative;
+        top: -10rem;
+    }
+
+    .karma{
+        position: absolute;
+        bottom: -9rem;
+        left: 27rem;
+    }
+
+    .calculator{
+        margin-left: 2rem;
+    }
+
+    .card__title{
+        font-size: 1.5rem;
+    }
+    
+    .card__description{
+        font-size: 1.15rem;
+    }
+
+}
